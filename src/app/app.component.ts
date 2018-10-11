@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'a9d-root',
@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'a9d';
+  inputPhrase: string;
+
+  updateInput( $event ) { this.inputPhrase = $event; }
+
+  clearInputPhrase() {
+    console.warn('clearing');
+    this.inputPhrase = '';
+  }
 }
