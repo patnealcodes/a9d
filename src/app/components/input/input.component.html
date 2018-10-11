@@ -1,0 +1,18 @@
+<mat-form-field class="a9d-input-container">
+  <textarea
+    [(ngModel)]="inputPhrase"
+    (input)="emitInputChange()"
+    matInput
+    type="text"
+    placeholder="Word or Phrase"
+    cdkTextareaAutosize
+  ></textarea>
+</mat-form-field>
+
+<div class="a9d-input-buttons">
+  <button
+    (click)="clearInputPhrase()"
+    color="warn"
+    mat-flat-button
+  >Clear</button>
+</div>

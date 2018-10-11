@@ -1,0 +1,25 @@
+mat-card {
+  margin: 2em 0 0;
+}
+
+mat-form-field {
+  width: 100%;
+}
+
+mat-card-content {
+  display: flex;
+  flex-direction: column;
+}
+
+mat-card-actions {
+  display: flex;
+  justify-content: center;
+}
+
+.a9d-translated-phrase {
+  border: none;
+  background: #ededed;
+  padding: 1em 2em;
+
+  &:focus { outline: none; }
+}

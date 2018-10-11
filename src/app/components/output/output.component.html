@@ -1,0 +1,23 @@
+<mat-card>
+  <mat-card-title>Translation:</mat-card-title>
+  <mat-card-content>
+    <textarea
+      class="a9d-translated-phrase"
+      id="a9d-translated-phrase"
+      placeholder="Translation"
+      cdkTextareaAutosize
+      contenteditable
+      readonly
+    >{{ inputPhrase | a9d }}</textarea>
+  </mat-card-content>
+  <mat-card-actions>
+    <button
+      data-clipboard-target="#a9d-translated-phrase"
+      class="a9d-copy-button"
+      color="accent"
+      mat-flat-button
+    >
+      <mat-icon>file_copy</mat-icon> Copy
+    </button>
+  </mat-card-actions>
+</mat-card>
