@@ -9,9 +9,4 @@ export class AppComponent {
   inputPhrase: string;
 
   updateInput( $event ) { this.inputPhrase = $event; }
-
-  clearInputPhrase() {
-    console.warn('clearing');
-    this.inputPhrase = '';
-  }
 }
